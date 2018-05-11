@@ -39,6 +39,7 @@ public class Collector
             System.exit(-1);
         }
         
+        /*
         openDatabase();
         
         if (con == null || s == null)
@@ -47,7 +48,6 @@ public class Collector
             System.err.println("Database connection not established.");
             System.exit(-1);
         }
-        /*
         try
         {
             s.executeUpdate("DELETE FROM config");
@@ -267,7 +267,8 @@ public class Collector
             agg.start();
             
         }
-    }void m
+    }
+    
     private class UdpBuffer
     {
         
@@ -344,7 +345,7 @@ public class Collector
         }
     }
     
-    public static ain(String[] args)
+    public static void main(String[] args)
     {
         
         Collector col = new Collector();
